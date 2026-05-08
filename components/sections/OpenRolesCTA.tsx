@@ -2,31 +2,18 @@
 
 export default function OpenRolesCTA() {
   return (
-    <section className="bg-[#ffffff]" style={{ padding: '80px 0 160px 0' }}>
+    <section id="open-positions" className="bg-[#ffffff]">
       <div className="container max-w-7xl">
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '40px', marginTop: '40px' }}>
-          <h2 className="font-body" style={{ textAlign: 'center', fontSize: 'clamp(3rem, 6vw, 5rem)', letterSpacing: '-0.03em', fontWeight: '500', color: '#000' }}>
+        <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-8 py-[clamp(6rem,14vh,10rem)]">
+          <h2 className="font-hero text-center text-[clamp(2.75rem,5vw,4.5rem)] tracking-tight text-black leading-none">
             Open Roles
           </h2>
-          <button style={{ 
-            backgroundColor: '#000', 
-            color: 'white', 
-            padding: '16px 36px', 
-            fontWeight: '500', 
-            fontSize: '0.9rem',
-            textTransform: 'uppercase', 
-            letterSpacing: '0.05em',
-            border: 'none',
-            cursor: 'pointer',
-            transition: 'background-color 0.2s ease',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px'
-          }}
-          onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#222'}
-          onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#000'}
+          <button
+            type="button"
+            className="group inline-flex min-w-[220px] items-center justify-center border border-black bg-[#141922] px-10 py-3.5 text-[1.05rem] font-medium tracking-[0.01em] text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-black hover:shadow-[0_12px_28px_rgba(0,0,0,0.22)]"
           >
-            APPLY NOW →
+            Apply Now
+            <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
           </button>
         </div>
       </div>

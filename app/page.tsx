@@ -11,9 +11,9 @@ export default function CareerPage() {
       <Navbar />
       <main className="flex flex-col w-full bg-white text-black min-h-screen pt-24">
         <Hero />
+        <OpenRolesCTA />
         <WhoWeAre />
         <RoleTypes />
-        <OpenRolesCTA />
       </main>
       <Footer />
     </>
